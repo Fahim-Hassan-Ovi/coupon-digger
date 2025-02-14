@@ -1,12 +1,14 @@
 import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Register = () => {
 
     const { createNewUser, setUser, updateUserProfile } = useContext(AuthContext);
     const navigate = useNavigate();
     const [error, setError] = useState({});
+    const [showPassword, setShowPassword] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -30,14 +32,14 @@ const Register = () => {
                 const user = result.user;
                 setUser(user);
                 // console.log(user);
-                updateUserProfile({displayName: name, photoURL: photo})
-                .then(() =>{
-                    navigate("/");
-                })
-                .catch(err=>{
-                    
-                    // console.log(err.message);
-                })
+                updateUserProfile({ displayName: name, photoURL: photo })
+                    .then(() => {
+                        navigate("/");
+                    })
+                    .catch(err => {
+
+                        // console.log(err.message);
+                    })
             })
             .catch(error => {
                 // console.log('Error', error.message)
@@ -73,11 +75,15 @@ const Register = () => {
                         </label>
                         <input type="email" name="email" placeholder="email" className="input input-bordered bg-[#F3F3F3]" required />
                     </div>
-                    <div className="form-control">
+                    <div className="form-control relative">
                         <label className="label">
                             <span className="label-text font-bold">Password</span>
                         </label>
-                        <input type="password" name="password" placeholder="password" className="input input-bordered bg-[#F3F3F3]" required />
+                        <input type={showPassword ? 'text' : 'password'} name="password" placeholder="password" className="input input-bordered bg-[#F3F3F3]" required />
+                        <button onClick={() => setShowPassword(!showPassword)}
+                            className='btn btn-xs absolute right-2 top-7'>
+                            {showPassword ? <FaEyeSlash /> : <FaEye />}
+                        </button>
                         {
                             error.password && (
                                 <label className="label text-red-500 text-xs">
