@@ -1,0 +1,227 @@
+[
+    {
+      "_id": "1",
+      "brand_name": "Nike",
+      "rating": 4.7,
+      "description": "Get the best sportswear and footwear at discounted prices.",
+      "brand_logo": "https://logos-world.net/wp-content/uploads/2020/04/Nike-Logo.png",
+      "coupons": [
+        {
+          "coupon-code": "NIKE20",
+          "description": "Get 20% off on all running shoes.",
+          "expiry-date": "2023-12-31",
+          "condition": "Minimum purchase of $100",
+          "cupon_type": "Percentage Discount"
+        },
+        {
+          "coupon-code": "NIKE15",
+          "description": "Get 15% off on all apparel.",
+          "expiry-date": "2023-11-15",
+          "condition": "No minimum purchase",
+          "cupon_type": "Percentage Discount"
+        }
+      ],
+      "shop-Link": "https://www.nike.com",
+      "category": "Sportswear",
+      "isSaleOn": true
+    },
+    {
+      "_id": "2",
+      "brand_name": "Adidas",
+      "rating": 4.6,
+      "description": "Shop the latest Adidas collections with exclusive discounts.",
+      "brand_logo": "https://logos-world.net/wp-content/uploads/2020/04/Adidas-Logo.png",
+      "coupons": [
+        {
+          "coupon-code": "ADIDAS25",
+          "description": "Get 25% off on all football shoes.",
+          "expiry-date": "2023-12-25",
+          "condition": "Minimum purchase of $150",
+          "cupon_type": "Percentage Discount"
+        },
+        {
+          "coupon-code": "ADIDAS10",
+          "description": "Get 10% off on all accessories.",
+          "expiry-date": "2023-10-30",
+          "condition": "No minimum purchase",
+          "cupon_type": "Percentage Discount"
+        }
+      ],
+      "shop-Link": "https://www.adidas.com",
+      "category": "Footwear",
+      "isSaleOn": true
+    },
+    {
+      "_id": "3",
+      "brand_name": "Amazon",
+      "rating": 4.8,
+      "description": "Shop millions of products with exclusive Amazon coupons.",
+      "brand_logo": "https://logos-world.net/wp-content/uploads/2020/04/Amazon-Logo.png",
+      "coupons": [
+        {
+          "coupon-code": "AMAZON30",
+          "description": "Get 30% off on all electronics.",
+          "expiry-date": "2023-11-20",
+          "condition": "Minimum purchase of $200",
+          "cupon_type": "Percentage Discount"
+        },
+        {
+          "coupon-code": "AMAZON50",
+          "description": "Get $50 off on home appliances.",
+          "expiry-date": "2023-12-01",
+          "condition": "Minimum purchase of $500",
+          "cupon_type": "Fixed Discount"
+        }
+      ],
+      "shop-Link": "https://www.amazon.com",
+      "category": "Electronics",
+      "isSaleOn": true
+    },
+    {
+      "_id": "4",
+      "brand_name": "Zara",
+      "rating": 4.5,
+      "description": "Trendy fashion for men, women, and kids at discounted prices.",
+      "brand_logo": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Zara_Logo.svg",
+      "coupons": [
+        {
+          "coupon-code": "ZARA40",
+          "description": "Get 40% off on all winter collections.",
+          "expiry-date": "2023-11-10",
+          "condition": "No minimum purchase",
+          "cupon_type": "Percentage Discount"
+        },
+        {
+          "coupon-code": "ZARA20",
+          "description": "Get 20% off on all kids' wear.",
+          "expiry-date": "2023-12-15",
+          "condition": "Minimum purchase of $50",
+          "cupon_type": "Percentage Discount"
+        }
+      ],
+      "shop-Link": "https://www.zara.com",
+      "category": "Fashion",
+      "isSaleOn": true
+    },
+    {
+      "_id": "5",
+      "brand_name": "Apple",
+      "rating": 4.9,
+      "description": "Get the latest Apple products with exclusive discounts.",
+      "brand_logo": "https://logos-world.net/wp-content/uploads/2020/04/Apple-Logo.png",
+      "coupons": [
+        {
+          "coupon-code": "APPLE100",
+          "description": "Get $100 off on MacBook Pro.",
+          "expiry-date": "2023-12-31",
+          "condition": "Minimum purchase of $1000",
+          "cupon_type": "Fixed Discount"
+        },
+        {
+          "coupon-code": "APPLE50",
+          "description": "Get $50 off on AirPods Pro.",
+          "expiry-date": "2023-11-30",
+          "condition": "No minimum purchase",
+          "cupon_type": "Fixed Discount"
+        }
+      ],
+      "shop-Link": "https://www.apple.com",
+      "category": "Electronics",
+      "isSaleOn": true
+    },
+    {
+      "_id": "6",
+      "brand_name": "Nike",
+      "rating": 4.7,
+      "description": "Exclusive discounts on Nike accessories.",
+      "brand_logo": "https://logos-world.net/wp-content/uploads/2020/04/Nike-Logo.png",
+      "coupons": [
+        {
+          "coupon-code": "NIKEACC15",
+          "description": "Get 15% off on all accessories.",
+          "expiry-date": "2023-12-15",
+          "condition": "No minimum purchase",
+          "cupon_type": "Percentage Discount"
+        }
+      ],
+      "shop-Link": "https://www.nike.com",
+      "category": "Accessories",
+      "isSaleOn": true
+    },
+    {
+      "_id": "7",
+      "brand_name": "Adidas",
+      "rating": 4.6,
+      "description": "Discounts on Adidas sportswear.",
+      "brand_logo": "https://logos-world.net/wp-content/uploads/2020/04/Adidas-Logo.png",
+      "coupons": [
+        {
+          "coupon-code": "ADIDASSP20",
+          "description": "Get 20% off on all sportswear.",
+          "expiry-date": "2023-11-30",
+          "condition": "Minimum purchase of $100",
+          "cupon_type": "Percentage Discount"
+        }
+      ],
+      "shop-Link": "https://www.adidas.com",
+      "category": "Sportswear",
+      "isSaleOn": true
+    },
+    {
+      "_id": "8",
+      "brand_name": "Amazon",
+      "rating": 4.8,
+      "description": "Discounts on Amazon fashion.",
+      "brand_logo": "https://logos-world.net/wp-content/uploads/2020/04/Amazon-Logo.png",
+      "coupons": [
+        {
+          "coupon-code": "AMAZONFASH20",
+          "description": "Get 20% off on all fashion items.",
+          "expiry-date": "2023-12-20",
+          "condition": "Minimum purchase of $50",
+          "cupon_type": "Percentage Discount"
+        }
+      ],
+      "shop-Link": "https://www.amazon.com",
+      "category": "Fashion",
+      "isSaleOn": true
+    },
+    {
+      "_id": "9",
+      "brand_name": "Zara",
+      "rating": 4.5,
+      "description": "Discounts on Zara home collections.",
+      "brand_logo": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Zara_Logo.svg",
+      "coupons": [
+        {
+          "coupon-code": "ZARAHOME25",
+          "description": "Get 25% off on all home collections.",
+          "expiry-date": "2023-11-25",
+          "condition": "Minimum purchase of $100",
+          "cupon_type": "Percentage Discount"
+        }
+      ],
+      "shop-Link": "https://www.zara.com",
+      "category": "Home",
+      "isSaleOn": true
+    },
+    {
+      "_id": "10",
+      "brand_name": "Apple",
+      "rating": 4.9,
+      "description": "Discounts on Apple Watch.",
+      "brand_logo": "https://logos-world.net/wp-content/uploads/2020/04/Apple-Logo.png",
+      "coupons": [
+        {
+          "coupon-code": "APPLEWATCH50",
+          "description": "Get $50 off on Apple Watch Series 8.",
+          "expiry-date": "2023-12-10",
+          "condition": "No minimum purchase",
+          "cupon_type": "Fixed Discount"
+        }
+      ],
+      "shop-Link": "https://www.apple.com",
+      "category": "Wearables",
+      "isSaleOn": true
+    }
+  ]
