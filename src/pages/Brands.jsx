@@ -6,7 +6,7 @@ const Brands = () => {
     return (
         <div className="py-10">
             <h2 className="text-2xl font-semibold">All the Brands</h2>
-            <div className="mt-8 flex flex-col items-center gap-5 border">
+            <div className="mt-8 flex flex-col items-center gap-5">
                 {
                     brands.map(brand => (
                         <div key={brand._id} className="border border-gray-300 rounded-lg py-4 px-10 relative flex flex-col items-center w-1/2">
