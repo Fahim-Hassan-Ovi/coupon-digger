@@ -5,7 +5,7 @@ import logo from "../assets/logo2.webp"
 const Navbar = () => {
   
     return (
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center bg-gray-500">
             <img className="w-20 h-10" src={logo} alt="" />
             <div className="nav space-x-5">
                 <Link to="/">Home</Link>
@@ -36,7 +36,7 @@ const Navbar = () => {
                         )
                 } */}
                 <div>
-                    <button className="btn btn-neutral rounded-none">Login</button>
+                    <button className="btn bg-gray-300 border-gray-300 rounded-none">Login</button>
                 </div>
             </div>
         </div>
