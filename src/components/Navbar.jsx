@@ -14,7 +14,7 @@ const Navbar = () => {
                 <div></div>
             )
         }
-        <div className="flex justify-between items-center  bg-gradient-to-r from-gray-300 to-teal-200">
+        <div className="flex flex-col md:flex-row justify-between items-center  bg-gradient-to-r from-gray-300 to-teal-200">
             <img className="w-20 h-10" src={logo} alt="" />
             <div className="nav space-x-5">
                 <Link to="/">Home</Link>

@@ -9,7 +9,7 @@ const Brands = () => {
             <div className="mt-8 flex flex-col items-center gap-5">
                 {
                     brands.map(brand => (
-                        <div key={brand._id} className="border bg-gradient-to-r from-gray-100 to-teal-100  rounded-lg py-4 px-10 relative flex flex-col items-center w-1/2">
+                        <div key={brand._id} className="border bg-gradient-to-r from-gray-100 to-teal-100  rounded-lg py-4 px-10 relative flex flex-col items-center md:w-1/2">
                             <img src={brand.brand_logo} alt={brand.brand_name} className="w-16 h-16 object-contain" />
                             <div className="flex justify-around items-center w-full px-2">
                                 <h2 className="text-lg font-bold mt-2">{brand.brand_name}</h2>
