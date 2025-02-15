@@ -1,6 +1,8 @@
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import Questions from "../components/Questions";
+import Review from "../components/Review";
 import TopBrands from "../components/TopBrands";
 
 const HomeLayout = () => {
@@ -14,6 +16,8 @@ const HomeLayout = () => {
                 <div className="min-h-[calc(100vh-264px)] container mx-auto px-12 w-[80%] max-w-[1200px]  mx-auto mt-10">
                     <Banner />
                     <TopBrands />
+                    <Review />
+                    <Questions />
                 </div>
             </main>
             <footer>
