@@ -23,7 +23,7 @@
       ],
       "shop-Link": "https://www.nike.com",
       "category": "Sportswear",
-      "isSaleOn": true
+      "isSaleOn": false
     },
     {
       "_id": "2",
@@ -49,7 +49,7 @@
       ],
       "shop-Link": "https://www.adidas.com",
       "category": "Footwear",
-      "isSaleOn": true
+      "isSaleOn": false
     },
     {
       "_id": "3",
@@ -203,7 +203,7 @@
       ],
       "shop-Link": "https://www.zara.com",
       "category": "Home",
-      "isSaleOn": true
+      "isSaleOn": false
     },
     {
       "_id": "10",

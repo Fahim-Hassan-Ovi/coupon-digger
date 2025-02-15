@@ -31,10 +31,10 @@ const Navbar = () => {
                 </div>
                 {
                     user && user?.email ? (
-                        <button onClick={logOut} className="btn btn-neutral rounded-none">log-Out</button>
+                        <button onClick={logOut} className="btn  bg-gray-300 border-gray-300 rounded-none hover:bg-gray-400">log-Out</button>
                     ) :
                         (
-                            <Link to="/auth/login" className="btn btn-neutral rounded-none">Login</Link>
+                            <Link to="/auth/login" className="btn bg-gray-300 border-gray-300 rounded-none hover:bg-gray-400">Login</Link>
                         )
                 }
                 {/* <div>
