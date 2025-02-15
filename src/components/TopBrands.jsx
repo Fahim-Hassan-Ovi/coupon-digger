@@ -16,7 +16,7 @@ const TopBrands = () => {
             <Marquee pauseOnHover={true} speed={50} className="space-x-10">
                 {
                     topBrands.map(brands=> (
-                        <Link to={`/details/${brands._id}`} key={brands._id}><img className="w-20 h-20 object-contain mr-6" src={brands.brand_logo} alt="" /></Link>
+                        <Link to={`/details/${brands._id}`} key={brands._id}><img className="w-20 h-20 object-contain mr-10" src={brands.brand_logo} alt="" /></Link>
                     ))
                 }
             </Marquee>

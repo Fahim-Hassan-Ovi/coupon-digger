@@ -1,5 +1,5 @@
 import { FaStar } from "react-icons/fa";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
 const Brands = () => {
     const brands = useLoaderData();
@@ -18,11 +18,13 @@ const Brands = () => {
                                     <span className="font-semibold">{brand.rating}</span>
                                 </div>
                             </div>
-
                             <p className="text-sm text-gray-600 text-center mt-1">{brand.description}</p>
-                            <button className="mt-3 px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-green-600">
-                                View Coupons
-                            </button>
+
+                            <Link to={`/details/${brand._id}`}>
+                                <button className="mt-3 px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-green-600">
+                                    View Coupons
+                                </button>
+                            </Link>
                             {brand.isSaleOn && (
                                 <div className="absolute top-2 right-2 text-red-500 font-bold animate-bounce">
                                     Sale is On!

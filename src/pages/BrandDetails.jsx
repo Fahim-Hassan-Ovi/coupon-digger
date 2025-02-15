@@ -16,9 +16,9 @@ const BrandDetails = () => {
             <header>
                 <Navbar />
             </header>
-            <div className="p-6 min-h-[calc(100vh-264px)] container mx-auto">
+            <div className="p-6 min-h-[calc(100vh-264px)] mx-auto  md:container px-6 md:px-12 md:w-[80%] max-w-[1200px]  mt-10">
                 {/* Brand Header */}
-                <div className="text-center my-10">
+                <div className="text-center md:my-10">
                     <img src={brand.brand_logo} alt={brand.brand_name} className="h-24 mx-auto" />
                     <h1 className="text-2xl font-bold mt-2">{brand.brand_name}</h1>
                     <p className="text-lg">⭐ {brand.rating} / 5</p>
