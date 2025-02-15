@@ -32,7 +32,7 @@ import AboutDev from "../pages/AboutDev";
       loader: () => fetch("/brands.json")
     },
     {
-      path: "/profile",
+      path: "/my-profile",
       element: <Profile />
     },
     {
