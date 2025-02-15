@@ -1,8 +1,13 @@
 import { useEffect, useState } from "react";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 const Review = () => {
     const [reviews, setReviews] = useState([]);
     useEffect(() => {
+        AOS.init({
+            duration: 1000, 
+            once: true, 
+        });
         fetch('/reviews.json')
             .then(res => res.json())
             .then(data =>
@@ -19,7 +24,7 @@ const Review = () => {
                         {reviews.map((review, index) => (
                             <div
                                 key={index}
-                                className="bg-indigo-50 p-6 rounded-lg shadow-md text-left"
+                                className="bg-indigo-50 p-6 rounded-lg shadow-md text-left" data-aos="fade-up" data-aos-delay="100"
                             >
                                 <div className="flex justify-center mb-3">
                                     {/* Star Ratings */}
