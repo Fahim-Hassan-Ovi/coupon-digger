@@ -32,7 +32,9 @@ const Login = () => {
             // console.log(result.user);
             navigate('/')
         })
-        .catch(error => console.log('ERROR', error.message));
+        .catch(error => {
+            // console.log('ERROR', error.message)
+        });
     }
     const handleForgetPassword = () =>{
         const email = emailRef.current.value;

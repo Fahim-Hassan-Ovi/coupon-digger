@@ -26,6 +26,11 @@ const Register = () => {
             setError({ ...error, password: "Password must be more than 5 character" });
             return;
         }
+        const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[\W_]).{6,}$/;
+        if (!passwordRegex.test(password)) {
+            setError({error, password: 'At least one, uppercase, one lowercase, one number, one special character'});
+            return;
+        }
         // console.log({ name, photo, email, password });
         createNewUser(email, password)
             .then(result => {
