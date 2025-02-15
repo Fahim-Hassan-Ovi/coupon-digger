@@ -11,7 +11,7 @@ const HomeLayout = () => {
             </header>
             <main>
                 {/* Dynamic Section */}
-                <div className="min-h-[calc(100vh-264px)] container mx-auto px-12">
+                <div className="min-h-[calc(100vh-264px)] container mx-auto px-12 w-[80%] max-w-[1200px]  mx-auto mt-10">
                     <Banner />
                     <TopBrands />
                 </div>

@@ -7,6 +7,7 @@ import BrandsLayout from "../layout/BrandsLayout";
 import AuthLayout from "../layout/AuthLayout";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
+import BrandDetails from "../pages/BrandDetails";
 
   const router = createBrowserRouter([
     {
@@ -17,6 +18,16 @@ import Register from "../pages/Register";
           
         }
       ]
+    },
+    {
+      path: "/details/:_id",
+      element: <BrandDetails />,
+      loader: async ({params}) =>{
+        const res = await fetch("/brands.json")
+        const data = await res.json()
+        const singleBrand = data.filter(data=>data._id == params._id)
+        return singleBrand;
+      }
     },
     {
       path: "/brands",
