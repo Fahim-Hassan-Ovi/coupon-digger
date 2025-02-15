@@ -1,9 +1,10 @@
-import { useContext, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
-
+import toast, { Toaster } from "react-hot-toast";
 const Login = () => {
-    const { userLogin, setUser, signInWithGoogle } = useContext(AuthContext);
+    const emailRef = useRef();
+    const { userLogin, setUser, signInWithGoogle, updatePassword } = useContext(AuthContext);
     const [error, setError] = useState({});
     const location = useLocation();
     const navigate = useNavigate();
@@ -33,8 +34,21 @@ const Login = () => {
         })
         .catch(error => console.log('ERROR', error.message));
     }
+    const handleForgetPassword = () =>{
+        const email = emailRef.current.value;
+        if(!email){
+            toast.error('Please provide a valid email address')
+        }
+        else{
+            updatePassword(email)
+            .then(() =>{
+                toast.success('Password Reset email send. Please check your email')
+            })
+        }
+    }
     return (
         <div className="min-h-screen flex justify-center items-center">
+            <Toaster />
             <div className="card bg-base-100 w-full max-w-md shrink-0 rounded-none p-10">
                 <h2 className="text-2xl font-semibold text-center">Login your account</h2>
                 <form onSubmit={handleSubmit} className="card-body space-y-4">
@@ -42,7 +56,7 @@ const Login = () => {
                         <label className="label">
                             <span className="label-text font-bold">Email</span>
                         </label>
-                        <input type="email" name="email" placeholder="email" className="input input-bordered bg-[#F3F3F3]" required />
+                        <input type="email" ref={emailRef} name="email" placeholder="email" className="input input-bordered bg-[#F3F3F3]" required />
                     </div>
                     <div className="form-control">
                         <label className="label">
@@ -59,7 +73,7 @@ const Login = () => {
                                 </>
                             )
                         }
-                        <label className="label">
+                        <label onClick={handleForgetPassword} className="label">
                             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                         </label>
                     </div>
