@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 
 const Login = () => {
-    const { userLogin, setUser } = useContext(AuthContext);
+    const { userLogin, setUser, signInWithGoogle } = useContext(AuthContext);
     const [error, setError] = useState({});
     const location = useLocation();
     const navigate = useNavigate();
@@ -25,6 +25,14 @@ const Login = () => {
                 setError({ ...error, login: err.code })
             })
     }
+    const handleGoogleSignIn = () =>{
+        signInWithGoogle()
+        .then(result => {
+            // console.log(result.user);
+            navigate('/')
+        })
+        .catch(error => console.log('ERROR', error.message));
+    }
     return (
         <div className="min-h-screen flex justify-center items-center">
             <div className="card bg-base-100 w-full max-w-md shrink-0 rounded-none p-10">
@@ -44,10 +52,10 @@ const Login = () => {
                         {
                             error.login && (
                                 <>
-                                <label className="label  text-sm text-red-600">
-                                    {error.login}
-                                </label>
-                                <br />
+                                    <label className="label  text-sm text-red-600">
+                                        {error.login}
+                                    </label>
+                                    <br />
                                 </>
                             )
                         }
@@ -56,10 +64,13 @@ const Login = () => {
                         </label>
                     </div>
                     <div className="form-control mt-6">
-                        <button className="btn btn-primary w-full bg-[#403F3F] border-none shadow-none">Login</button>
+                        <button className="btn btn-primary w-full bg-[#403F3F] border-none shadow-none hover:bg-gray-500">Login</button>
                     </div>
                 </form>
                 <p className="text-center font-semibold">Dont’t Have An Account ? <Link className="text-red-500" to="/auth/register">Register</Link></p>
+                
+                    <button onClick={handleGoogleSignIn} className="btn btn-primary bg-[#403F3F] border-none shadow-none mx-8 mt-4 hover:bg-gray-500">Google</button>
+                
             </div>
         </div>
     );
