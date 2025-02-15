@@ -5,7 +5,7 @@ const Review = () => {
     const [reviews, setReviews] = useState([]);
     useEffect(() => {
         AOS.init({
-            duration: 1000, 
+            duration: 2000, 
             once: true, 
         });
         fetch('/reviews.json')
@@ -15,7 +15,7 @@ const Review = () => {
     }, []);
     return (
         <div>
-            <section className="py-12 bg-gray-100 my-8">
+            <section className="py-12 bg-gradient-to-r from-gray-400 to-teal-200 opacity-90 my-8 rounded-lg">
                 <div className="container mx-auto px-4">
                     <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
                         Some Of Our Customers Feedback
@@ -24,7 +24,7 @@ const Review = () => {
                         {reviews.map((review, index) => (
                             <div
                                 key={index}
-                                className="bg-indigo-50 p-6 rounded-lg shadow-md text-left" data-aos="fade-up" data-aos-delay="100"
+                                className="bg-indigo-50 p-6 rounded-lg shadow-md text-left" data-aos="fade-up" data-aos-delay="200"
                             >
                                 <div className="flex justify-center mb-3">
                                     {/* Star Ratings */}

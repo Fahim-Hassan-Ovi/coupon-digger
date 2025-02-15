@@ -8,16 +8,13 @@ import AuthLayout from "../layout/AuthLayout";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import BrandDetails from "../pages/BrandDetails";
+import Profile from "../pages/Profile";
+import AboutDev from "../pages/AboutDev";
 
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <HomeLayout />,
-      children:[
-        {
-          
-        }
-      ]
+      element: <HomeLayout />
     },
     {
       path: "/details/:_id",
@@ -33,6 +30,14 @@ import BrandDetails from "../pages/BrandDetails";
       path: "/brands",
       element: <BrandsLayout />,
       loader: () => fetch("/brands.json")
+    },
+    {
+      path: "/profile",
+      element: <Profile />
+    },
+    {
+      path: "/about",
+      element: <AboutDev />,
     },
     {
       path: 'auth',

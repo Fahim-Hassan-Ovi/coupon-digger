@@ -16,7 +16,7 @@ const BrandDetails = () => {
             <header>
                 <Navbar />
             </header>
-            <div className="p-6 min-h-[calc(100vh-264px)] mx-auto  md:container px-6 md:px-12 md:w-[80%] max-w-[1200px]  mt-10">
+            <div className="p-6 min-h-[calc(100vh-264px)] md:mx-auto md:container px-6 md:px-12 md:w-[80%] max-w-[1200px]  mt-10 ">
                 {/* Brand Header */}
                 <div className="text-center md:my-10">
                     <img src={brand.brand_logo} alt={brand.brand_name} className="h-24 mx-auto" />
@@ -27,7 +27,7 @@ const BrandDetails = () => {
                 {/* Coupons Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                     {brand.coupons.map((coupon, index) => (
-                        <div key={index} className="border-1  border-gray-300 p-4 rounded-lg ">
+                        <div key={index} className="border-1  bg-gradient-to-r from-gray-100 to-teal-100  p-4 rounded-lg text-black">
                             <h2 className="text-lg font-semibold">{coupon.description}</h2>
                             <p className="text-gray-600">Expires: {coupon["expiry-date"]}</p>
                             <p className="text-gray-600">Condition: {coupon.condition}</p>
@@ -41,7 +41,7 @@ const BrandDetails = () => {
                                 {/* Use Now Button */}
                                 <button
                                     onClick={() => window.open(brand["shop-Link"], "_blank")}
-                                    className="bg-green-400 text-white px-4 py-2 ml-2 rounded"
+                                    className="bg-teal-400 text-white px-4 py-2 ml-2 rounded hover:bg-gray-400"
                                 >
                                     Use Now
                                 </button>

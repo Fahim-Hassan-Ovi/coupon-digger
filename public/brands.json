@@ -222,5 +222,83 @@
       "shop-Link": "https://www.samsung.com",
       "category": "Electronics",
       "isSaleOn": true
+    },
+    {
+      "_id": "8",
+      "brand_name": "Puma",
+      "rating": 4.5,
+      "description": "Performance and sport-inspired lifestyle products.",
+      "brand_logo": "https://logos-world.net/wp-content/uploads/2020/04/Puma-Logo.png",
+      "coupons": [
+        {
+          "coupon-code": "PUMA30",
+          "description": "Get 30% off on all running shoes.",
+          "expiry-date": "2023-12-15",
+          "condition": "Minimum purchase of $100",
+          "cupon_type": "Percentage Discount"
+        },
+        {
+          "coupon-code": "PUMA20",
+          "description": "Get 20% off on all apparel.",
+          "expiry-date": "2023-11-30",
+          "condition": "No minimum purchase",
+          "cupon_type": "Percentage Discount"
+        }
+      ],
+      "shop-Link": "https://www.puma.com",
+      "category": "Sportswear",
+      "isSaleOn": true
+    },
+    {
+      "_id": "9",
+      "brand_name": "Levi's",
+      "rating": 4.6,
+      "description": "Iconic denim and casual wear for men and women.",
+      "brand_logo": "https://logos-world.net/wp-content/uploads/2020/04/Levis-Logo.png",
+      "coupons": [
+        {
+          "coupon-code": "LEVIS40",
+          "description": "Get 40% off on all jeans.",
+          "expiry-date": "2023-11-20",
+          "condition": "No minimum purchase",
+          "cupon_type": "Percentage Discount"
+        },
+        {
+          "coupon-code": "LEVIS25",
+          "description": "Get 25% off on all jackets.",
+          "expiry-date": "2023-12-10",
+          "condition": "Minimum purchase of $75",
+          "cupon_type": "Percentage Discount"
+        }
+      ],
+      "shop-Link": "https://www.levi.com",
+      "category": "Fashion",
+      "isSaleOn": true
+    },
+    {
+      "_id": "10",
+      "brand_name": "Microsoft",
+      "rating": 4.8,
+      "description": "Explore the latest Microsoft products and software.",
+      "brand_logo": "https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg",
+      "coupons": [
+        {
+          "coupon-code": "MICROSOFT100",
+          "description": "Get $100 off on Surface Laptop.",
+          "expiry-date": "2023-12-31",
+          "condition": "Minimum purchase of $1000",
+          "cupon_type": "Fixed Discount"
+        },
+        {
+          "coupon-code": "MICROSOFT50",
+          "description": "Get $50 off on Xbox Series X.",
+          "expiry-date": "2023-11-30",
+          "condition": "No minimum purchase",
+          "cupon_type": "Fixed Discount"
+        }
+      ],
+      "shop-Link": "https://www.microsoft.com",
+      "category": "Electronics",
+      "isSaleOn": true
     }
   ]
