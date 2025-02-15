@@ -11,6 +11,7 @@ import BrandDetails from "../pages/BrandDetails";
 import Profile from "../pages/Profile";
 import AboutDev from "../pages/AboutDev";
 import PrivateRoutes from "./PrivateRoutes";
+import UpdateProfile from "../pages/UpdateProfile";
 
   const router = createBrowserRouter([
     {
@@ -38,6 +39,12 @@ import PrivateRoutes from "./PrivateRoutes";
       path: "/my-profile",
       element: <PrivateRoutes>
         <Profile />
+      </PrivateRoutes>
+    },
+    {
+      path: "/update-profile",
+      element: <PrivateRoutes>
+        <UpdateProfile />
       </PrivateRoutes>
     },
     {

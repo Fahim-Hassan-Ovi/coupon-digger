@@ -34,6 +34,10 @@ const AuthProvider = ({ children }) => {
     const updateUserProfile = (updatedData) => {
         return updateProfile(auth.currentUser, updatedData)
     }
+    const reloadUser = async () => {
+        await auth.currentUser.reload();
+        setUser(auth.currentUser);
+      };
     const authInfo = {
         user,
         setUser,
@@ -44,6 +48,7 @@ const AuthProvider = ({ children }) => {
         userLogin,
         loading,
         updateUserProfile,
+        reloadUser
     }
 
     useEffect(() => {

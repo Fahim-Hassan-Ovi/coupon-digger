@@ -3,9 +3,10 @@ import { AuthContext } from "../provider/AuthProvider";
 import background from "../assets/background1.avif"
 import Footer from "../components/Footer";
 import { IoArrowBackOutline } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const Profile = () => {
-    const { user } = useContext(AuthContext)
+    const { user } = useContext(AuthContext);
+    const navigate = useNavigate();
     return (
         <>
             <div>
@@ -37,7 +38,7 @@ const Profile = () => {
                             </button>
                             </Link>
                                 {/* Update Features */}
-                            <button className=" px-4 py-2 bg-teal-500 text-white rounded-lg shadow-md hover:bg-gray-600 transition">
+                            <button onClick={() => navigate("/update-profile")} className=" px-4 py-2 bg-teal-500 text-white rounded-lg shadow-md hover:bg-gray-600 transition">
                                 Edit Profile
                             </button>
                             

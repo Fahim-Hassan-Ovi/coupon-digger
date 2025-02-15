@@ -9,7 +9,7 @@ const BrandDetails = () => {
 
     const singleBrand = useLoaderData();
     const brand = singleBrand[0];
-    console.log(brand);
+    // console.log(brand);
     return (
         <div className="">
             <Toaster />
